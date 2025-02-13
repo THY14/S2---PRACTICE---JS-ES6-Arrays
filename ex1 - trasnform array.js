@@ -11,10 +11,10 @@
  * @returns a  list of objects
  */
 function transformToObjects(listOfNumbers) {
-  result = [];
-  for(let i = 0; i < listOfNumbers.length; i++){
-    result.push({val: listOfNumbers[i]});
-  }
+  let result = [];
+  listOfNumbers.forEach(element => {
+    result.push({val: element});
+  });
   return result;
 }
 
